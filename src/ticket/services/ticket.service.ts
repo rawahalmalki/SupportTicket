@@ -104,16 +104,6 @@ async deleteTicket(id: string): Promise<void> {
 }
 
 
-{/* async updateStatus(id: string, status: Ticket['ticketStatus']): Promise<Ticket> {
-  const ticket = await this.ticketRepository.findOne({ where: { ticketId: id } });
 
-  if (!ticket) {
-    throw new NotFoundException(`Ticket ${id} not found`);
-  }
-
-  ticket.ticketStatus = status; 
-  return await this.ticketRepository.save(ticket); 
-
-}*/}
 
  
