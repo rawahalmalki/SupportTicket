@@ -11,9 +11,9 @@ export class ClickUpService {
 
 
   constructor() {
-    this.clickupApiKey = process.env.CLICKUP_API_KEY || 'pk_113633059_J1KWRP1C0GPZ203LA43VEDHO4IF9BLYG';
-    this.clickupListId = process.env.CLICKUP_LIST_ID || '1100270000003380';
-    this.clickupTeamId = process.env.CLICKUP_TEAM_ID || '90182570660';
+    this.clickupApiKey = process.env.CLICKUP_API_KEY || '';
+    this.clickupListId = process.env.CLICKUP_LIST_ID || '';
+    this.clickupTeamId = process.env.CLICKUP_TEAM_ID || '';
   }
    
 async createTaskFromTicket(ticket: Ticket): Promise<any> {
